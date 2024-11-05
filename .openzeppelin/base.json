@@ -1,0 +1,298 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0x00B9cd86ed1c100049A96A64f4FF5466BA3CEd20",
+      "txHash": "0xf41e0dfd844ac09bcea3f8e139d64312dd09df174232577d24d66c2c8141d235",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x4AD336CaB736bC7d437d0b70b76d6aAe370f26fC",
+      "txHash": "0xfe6b228f4d6042fe4241d479994a8ccf4852aba0bb7b6bfce9fde68d8ab9c1bf",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "0472c4500876393ad9b5d1397ffde985a35bc3a0692b4474573c7875ccefb92b": {
+      "address": "0x9C8ADF14A6B39e802AB41D2e3d7b98583Cc5d3b9",
+      "txHash": "0x95f98a3e24814a38366df1c7c9faa36f8be54d263aae69c367e045d44889b1cc",
+      "layout": {
+        "solcVersion": "0.8.27",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:40"
+          },
+          {
+            "label": "_paused",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_bool",
+            "contract": "PausableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:29"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "PausableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:116"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC165Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol:41"
+          },
+          {
+            "label": "_roles",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_mapping(t_bytes32,t_struct(RoleData)23_storage)",
+            "contract": "AccessControlUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:57"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "AccessControlUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:260"
+          },
+          {
+            "label": "accounts",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_mapping(t_address,t_array(t_struct(Account)7348_storage)dyn_storage)",
+            "contract": "MultiAccount",
+            "src": "contracts/multiAccount/MultiAccount.sol:24"
+          },
+          {
+            "label": "indexOfAccount",
+            "offset": 0,
+            "slot": "202",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "MultiAccount",
+            "src": "contracts/multiAccount/MultiAccount.sol:25"
+          },
+          {
+            "label": "owners",
+            "offset": 0,
+            "slot": "203",
+            "type": "t_mapping(t_address,t_address)",
+            "contract": "MultiAccount",
+            "src": "contracts/multiAccount/MultiAccount.sol:26"
+          },
+          {
+            "label": "accountsAdmin",
+            "offset": 0,
+            "slot": "204",
+            "type": "t_address",
+            "contract": "MultiAccount",
+            "src": "contracts/multiAccount/MultiAccount.sol:28"
+          },
+          {
+            "label": "symmioAddress",
+            "offset": 0,
+            "slot": "205",
+            "type": "t_address",
+            "contract": "MultiAccount",
+            "src": "contracts/multiAccount/MultiAccount.sol:29"
+          },
+          {
+            "label": "saltCounter",
+            "offset": 0,
+            "slot": "206",
+            "type": "t_uint256",
+            "contract": "MultiAccount",
+            "src": "contracts/multiAccount/MultiAccount.sol:30"
+          },
+          {
+            "label": "accountImplementation",
+            "offset": 0,
+            "slot": "207",
+            "type": "t_bytes_storage",
+            "contract": "MultiAccount",
+            "src": "contracts/multiAccount/MultiAccount.sol:31"
+          },
+          {
+            "label": "delegatedAccesses",
+            "offset": 0,
+            "slot": "208",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_mapping(t_bytes4,t_bool)))",
+            "contract": "MultiAccount",
+            "src": "contracts/multiAccount/MultiAccount.sol:33"
+          },
+          {
+            "label": "revokeCooldown",
+            "offset": 0,
+            "slot": "209",
+            "type": "t_uint256",
+            "contract": "MultiAccount",
+            "src": "contracts/multiAccount/MultiAccount.sol:35"
+          },
+          {
+            "label": "revokeProposalTimestamp",
+            "offset": 0,
+            "slot": "210",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_mapping(t_bytes4,t_uint256)))",
+            "contract": "MultiAccount",
+            "src": "contracts/multiAccount/MultiAccount.sol:36"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(Account)7348_storage)dyn_storage": {
+            "label": "struct IMultiAccount.Account[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_bytes4": {
+            "label": "bytes4",
+            "numberOfBytes": "4"
+          },
+          "t_bytes_storage": {
+            "label": "bytes",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_address)": {
+            "label": "mapping(address => address)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_array(t_struct(Account)7348_storage)dyn_storage)": {
+            "label": "mapping(address => struct IMultiAccount.Account[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_mapping(t_bytes4,t_bool)))": {
+            "label": "mapping(address => mapping(address => mapping(bytes4 => bool)))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_mapping(t_bytes4,t_uint256)))": {
+            "label": "mapping(address => mapping(address => mapping(bytes4 => uint256)))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_bytes4,t_bool))": {
+            "label": "mapping(address => mapping(bytes4 => bool))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_bytes4,t_uint256))": {
+            "label": "mapping(address => mapping(bytes4 => uint256))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(RoleData)23_storage)": {
+            "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes4,t_bool)": {
+            "label": "mapping(bytes4 => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes4,t_uint256)": {
+            "label": "mapping(bytes4 => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Account)7348_storage": {
+            "label": "struct IMultiAccount.Account",
+            "members": [
+              {
+                "label": "accountAddress",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(RoleData)23_storage": {
+            "label": "struct AccessControlUpgradeable.RoleData",
+            "members": [
+              {
+                "label": "members",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "adminRole",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        },
+        "namespaces": {}
+      }
+    }
+  }
+}
